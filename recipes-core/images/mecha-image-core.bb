@@ -74,11 +74,13 @@ PACKAGE_FEED_BASE_PATHS = "deb deb-dev"
 
 IMAGE_INSTALL:append = " networkmanager networkmanager-nmtui networkmanager-nmcli"
 IMAGE_INSTALL:append = " nftables nftables-python"
-IMAGE_INSTALL:append = " firewalld"
+#IMAGE_INSTALL:append = " firewalld"
 IMAGE_INSTALL:append = " openssh openssh-sshd"
 #IMAGE_INSTALL:append = " connman connman-client" 
 IMAGE_INSTALL:append = " libgpiod libgpiod-tools"
 
+# GNU Privacy Guard - encryption and signing tools
+IMAGE_INSTALL:append = " gnupg"
 
 IMAGE_INSTALL:append = " ntp"
 NTP_SERVERS = "time.google.com time1.google.com time.cloudflare.com"
@@ -98,7 +100,8 @@ IMAGE_INSTALL:append = " xhost xauth sysbench htop"
 #IMAGE_INSTALL:append = " mecha-device-test"
 IMAGE_INSTALL:append = " battery blinkgpio"
 
-IMAGE_INSTALL:append = " sway-18 swayfx swayidle swaylock sway-login-configs libpam-pwdfile"
+IMAGE_INSTALL:append = " sway-1.8 swayidle swaylock sway-login-configs libpam-pwdfile"
+#IMAGE_INSTALL:append = " swayfx"
 IMAGE_INSTALL:append = " cage"
 # IMAGE_INSTALL:append = " phoc"
 IMAGE_INSTALL:append = " wayfire wf-config wcm wf-shell"
@@ -134,7 +137,7 @@ IMAGE_INSTALL:append = " asciinema"
 IMAGE_INSTALL:append = " wob"
 
 # terminal
-IMAGE_INSTALL:append = " foot"
+#IMAGE_INSTALL:append = " foot"
 
 # benchmarks
 IMAGE_INSTALL:append = " glmark2"

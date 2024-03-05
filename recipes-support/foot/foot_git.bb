@@ -16,16 +16,16 @@ DEPENDS = " \
 	wayland-native \
 "
 
-RRECOMMENDS:${PN} = "ncurses-terminfo xdg-utils"
+RRECOMMENDS:${PN} = "ncurses-terminfo"
 
 SRC_URI = " \
-	git://codeberg.org/dnkl/foot.git;protocol=https;branch=releases/1.12 \
+	git://codeberg.org/dnkl/foot.git;protocol=https;branch=master \
 	file://0001-generate-version.sh-dont-try-to-fetch-version-from-g.patch \
 "
 
 S = "${WORKDIR}/git"
-PV = "1.12.1"
-SRCREV = "e95269447f1b62384dc64707bb19ebe1006386ac"
+PV = "1.16.2"
+SRCREV = "8b3dbf09728b5c5478ab5f9593abd75c4c442d73"
 
 PACKAGECONFIG[grapheme-clustering] = "-Dgrapheme-clustering=enabled,-Dgrapheme-clustering=disabled,utf8proc"
 PACKAGECONFIG[docs] = "-Ddocs=enabled,-Ddocs=disabled,scdoc-native"
@@ -48,4 +48,3 @@ FILES:${PN} = " \
 "
 
 BBCLASSEXTEND = ""
-
