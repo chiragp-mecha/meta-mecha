@@ -16,11 +16,13 @@ DEPENDS:append = " virtual/kernel"
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
+RDEPENDS:${PN} += "ncurses ncurses-libform libcrypto openssl"
 # dosfstools : for mkfs commands
-IMAGE_INSTALL:append = " e2fsprogs-resize2fs parted dosfstools"
+IMAGE_INSTALL:append = " e2fsprogs-resize2fs parted dosfstools partclone openssl"
+#DEPENDS = " openssl"
 
 install_uuu_script_initramfs() {
-	cp -r ${THISDIR}/files/uuu_wic_ramffs.auto  ${DEPLOY_DIR_IMAGE}
+	cp -r ${THISDIR}/files/uuu_wic_ramfs.auto  ${DEPLOY_DIR_IMAGE}
 }
 
 ROOTFS_POSTPROCESS_COMMAND += "install_uuu_script_initramfs;"

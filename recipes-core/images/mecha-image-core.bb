@@ -101,8 +101,8 @@ IMAGE_INSTALL:append = " xhost xauth sysbench htop"
 IMAGE_INSTALL:append = " battery blinkgpio"
 
 IMAGE_INSTALL:append = " sway-1.8 swayidle swaylock sway-login-configs libpam-pwdfile"
-#IMAGE_INSTALL:append = " swayfx"
-IMAGE_INSTALL:append = " cage"
+# IMAGE_INSTALL:append = " swayfx"
+# IMAGE_INSTALL:append = " cage"
 # IMAGE_INSTALL:append = " phoc"
 IMAGE_INSTALL:append = " wayfire wf-config wcm wf-shell"
 
@@ -143,49 +143,50 @@ IMAGE_INSTALL:append = " wob"
 IMAGE_INSTALL:append = " glmark2"
 
 # Recipes-GUI-extra
-IMAGE_INSTALL:append = " salut \
-                        sway-alttab \
-                        swayimg \
-                        swhkd \
-                        swww \
-                        waypipe \
-                        waysay \
-                        wayshot \
-                        yazi \
-                        alacritty \
-                        gnome-calculator \
-                        dunst \
-                        regreet \
-                        "
+# IMAGE_INSTALL:append = " salut \ 
+#                         sway-alttab \ 
+#                         swayimg \ 
+#                         swhkd \ 
+#                         swww \ 
+#                         waypipe \ 
+#                         waysay \ 
+#                         wayshot \ 
+#                         yazi \ 
+#                         alacritty \ 
+#                         gnome-calculator \ 
+#                         dunst \ 
+#                         regreet \ 
+#                         "
 
 # Recipes Graphics Mecha-Launcher
 # IMAGE_INSTALL:append = " mecha-launcher mecha-action-bar mecha-app-dock mecha-app-drawer 
 #                          mecha-lock-screen mecha-settings-drawer mecha-status-bar 
 #                         "
 
-IMAGE_INSTALL:append = " mecha-action-bar \
-                        mecha-app-dock \
-                        mecha-app-drawer \
-                        mecha-app-switcher \
-                        mecha-greeter \
-                        mecha-settings-drawer \
-                        mecha-status-bar \
-                        background \
-                        osk \
-                        rotation \
-                        fonts \
-                       " 
+# IMAGE_INSTALL:append = " mecha-action-bar \ 
+#                         mecha-app-dock \ 
+#                         mecha-app-drawer \ 
+#                         mecha-app-switcher \ 
+#                         mecha-greeter \ 
+#                         mecha-settings-drawer \ 
+#                         mecha-status-bar \ 
+#                         background \ 
+#                         osk \ 
+#                         rotation \ 
+#                         fonts \ 
+#                        " 
 
 
 # Media files to test audio-video & photos
 IMAGE_INSTALL:append = " test-files"
 
 #IMAGE_INSTALL:append = " wpewebkit cog"
-IMAGE_INSTALL:append = " chromium-ozone-wayland"
+#IMAGE_INSTALL:append = " chromium-ozone-wayland"
 
-IMAGE_INSTALL:append = " linux-optiga-trust-m-libtrustm \
-                         linux-optiga-trust-m-apps \
-                         linux-optiga-trust-m-openssl \
-                       "
+IMAGE_INSTALL:append = " linux-optiga-trust-m-libtrustm \ 
+                        linux-optiga-trust-m-apps \ 
+                        linux-optiga-trust-m-openssl \ 
+                      "
                     
 IMAGE_INSTALL:append = " polkit-gnome"
+

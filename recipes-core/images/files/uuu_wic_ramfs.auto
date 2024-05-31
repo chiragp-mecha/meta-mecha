@@ -63,11 +63,11 @@ FB: acmd booti ${loadaddr} ${initrd_addr} ${fdt_addr}
 FBK: ucmd sleep 2
 FBK: ucmd lsblk
 FBK: ucmd df -h
-FBK: ucmd parted /dev/mmcblk2 resizepart 2 8192MB
+FBK: ucmd parted /dev/mmcblk2 resizepart 2 10000MB
 FBK: ucmd sleep 1
 
 # create home partition
-FBK: ucmd parted /dev/mmcblk2 -- mkpart primary ext4 8195MB 29000MB
+FBK: ucmd parted /dev/mmcblk2 -- mkpart primary ext4 10005MB 29000MB
 FBK: ucmd sleep 1
 
 # resize filesystem
@@ -99,4 +99,3 @@ FBK: ucmd df -h
 
 FBK: ucmd sync
 FBK: DONE
-

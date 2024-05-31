@@ -10,8 +10,8 @@ SRCREV="ffcba1b3b75f3a4f3571b6ba394698bf6ec160a3"
 S = "${WORKDIR}/git"
 
 do_install() {
-    install -d ${D}${datadir}/mechanix-shell/wallpapers
-    install -m 0755 ${S}/wallpapers/*  ${D}${datadir}/mechanix-shell/wallpapers
+    install -d ${D}${datadir}/backgrounds/mechanix
+    install -m 0755 ${S}/wallpapers/*  ${D}${datadir}/backgrounds/mechanix
 
     install -d ${D}${datadir}/fonts
     cp -r ${S}/fonts/*  ${D}${datadir}/fonts
